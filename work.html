@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Analüütiku praktika kodutöö - Emma Võsa</title>
+    <style>
+        html, body, * {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            padding: 0;
+            margin: 0;
+            font-family: Helvetica, Arial, sans-serif;
+            background-color: #F9F9F9;
+        }
+
+        h1 {
+            margin-bottom: 0;
+        }
+
+        h1 + h2 {
+            margin-top: 8px;
+        }
+
+        .container {
+            display: block;
+            width: 100%;
+            max-width: 1024px;
+            margin: 0 auto;
+        }
+
+        .img_group img {
+            display: block;
+            float: left;
+            max-width: 50%;
+        }
+
+
+        article {
+            padding: 40px 20px 20px;
+            background-color: #FFF;
+            line-height: 150%;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Analüütiku praktika kodutöö</h1>
+            <h2>Emma Võsa</h2>
+            <ul>
+                <li>
+                    <a href="#desc">Kirjeldus</a>
+                </li>
+                <li>
+                    <a href="#visual">Töö lõpptulemuse visuaal</a>
+                </li>
+                <li>
+                    <a href="#analysis">Tehtud graafikute eelised ja puudused võrreldes algse graafikuga</a>
+                </li>
+            </ul>
+        </header>
+
+        <article>
+            <h2 id="desc">Kirjeldus</h2>
+            <a href="https://www.kaggle.com/russellyates88/suicide-rates-overview-1985-to-2016" target="_blank">Link algsele graafikule</a>
+            <p>
+                Kodutöö kood asub kuues erinevas .R failis. Igas failis kasutatakse sama algandmestikku, kuid koodi loetavuse ja puhtuse jaoks otsustasin teha iga graafiku kohta eraldi faili.
+                Osutub, et igal graafikul on suitsiidide arv enamjaolt langustrendis kui võrrelda 1995. ja 2015. aastat.
+            </p>
+            <h2 id="visual">Töö lõpptulemuse visuaal</h2>
+            <div class="img_group">
+                <img src="estonian_suicides.gif" alt="Eesti suitsiidid">
+                <img src="latvian_suicides.gif" alt="Läti suitsiidid">
+            </div>
+            <img src="lv_est_suicides_by_sex.gif" alt="Eesti ja Läti suitsiidid soo järgi">
+            <img src="est_suicides_by_age_group.png" alt="Eesti suitsiidid vanusegruppide järgi">
+            <img src="suicides_in_eastern_europe.png" alt="Ida-Euroopa suitsiidid">
+            <img src="estonia_neighbour_suicides.gif" alt="Eesti ja naaberriikide suitsiidid">
+            <h2 id="analysis">Tehtud graafikute eelised ja puudused võrreldes algse graafikuga</h2>
+            <p>
+                Tehtud graafikud on algse graafikuga võrreldes tähendusrikkad ja spetsiifilised. Rõhku on pandud Eestile ja Eesti naaberriikidele. Esialgsed graafikud on automaatselt genereeritud, mis on tänapäeva tehnoloogia puhul nii eeliseks kui ka puuduseks. Esialgsete graafikute looja ehk arvutiprogramm võib osata andmete põhjal midagi kuvada ja mingisuguseid järeldusi teha, kuid ilma tõsisema analüüsita ja andmetest aru saamata ei ole võimalik midagi tähenduslikku luua. Puudusena tehtud graafikute juures tooksin välja algandmetes leiduva info SKT ja inimarengu indeksi kohta, mille põhjal oleks võimalik veel rohkem järeldusi teha.
+            </p>
+        </article>
+    </div>
+</body>
+</html>
